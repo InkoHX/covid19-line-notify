@@ -4,6 +4,8 @@
 
 # covid19-line-notify
 
+**Use LINE Notify from GitHub Actions to notify LINE about COVID-19.**
+
 ![LICENCE](https://img.shields.io/github/license/InkoHX/covid19-line-notify?label=LICENCE&style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/InkoHX/covid19-line-notify)
 
