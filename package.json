@@ -1,10 +1,9 @@
 {
-  "name": "typescript-template-yarn",
+  "name": "covid19-line-notify",
   "version": "0.0.1",
   "description": "TypeScript template for Yarn.",
   "main": "dist/index.js",
   "license": "MIT",
-  "homepage": "",
   "author": {
     "name": "InkoHX",
     "email": "inkohx@gmail.com",
@@ -12,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/InkoHX/***.git"
+    "url": "https://github.com/InkoHX/covid19-line-notify.git"
   },
   "bugs": {
-    "url": "https://github.com/InkoHX/***/issues"
+    "url": "https://github.com/InkoHX/covid19-line-notify/issues"
   },
   "funding": {
     "type": "patreon",
@@ -30,11 +29,15 @@
     "watch": "tsc -w -p .",
     "watch:test": "tsc -w -p . --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@inkohx/line-notify": "^0.0.1",
+    "node-fetch": "^2.6.0"
+  },
   "peerDependencies": {},
   "devDependencies": {
     "@inkohx/eslint-config-codestyle": "^2.1.1",
     "@types/node": "^13.11.0",
+    "@types/node-fetch": "^2.5.5",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "eslint": "^6.8.0",
