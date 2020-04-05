@@ -27,7 +27,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-yarn-
     - name: Install dependencies.
-      run: yarn --prod
+      run: yarn
     - name: Compile source code
       run: yarn run compile
     - name: Run script
