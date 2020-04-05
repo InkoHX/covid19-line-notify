@@ -1,5 +1,5 @@
 import { LineNotify } from '@inkohx/line-notify'
-import fetch from 'node-fetch'
+import fetch, { Response } from 'node-fetch'
 
 interface Prefecture {
   id: number,
@@ -29,12 +29,12 @@ interface Total {
 
 const BASE_URL = 'https://covid19-japan-web-api.now.sh/api/v1'
 
-async function run (): Promise<void> {
+async function run (): Promise<Response> {
   const notify = new LineNotify()
   const prefecture = await fetchPrefectures()
   const total = await fetchTotal()
 
-  notify.send([
+  return notify.send([
     '「COVID-19」の情報',
     '',
     `= ${prefecture.name_ja} =`,
@@ -47,7 +47,6 @@ async function run (): Promise<void> {
     `退院者数: ${total.discharge}人`,
     `死者数: ${total.death}人`
   ].join('\n'))
-    .catch(console.error)
 }
 
 async function fetchPrefectures (): Promise<Prefecture> {
