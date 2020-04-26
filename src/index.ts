@@ -45,7 +45,9 @@ async function run (): Promise<Response> {
     `検査人数: ${total.pcr}人`,
     `入院者数: ${total.hospitalize}人`,
     `退院者数: ${total.discharge}人`,
-    `死者数: ${total.death}人`
+    `死者数: ${total.death}人`,
+    '',
+    'データソース: https://github.com/swsoyee/2019-ncov-japan'
   ].join('\n'))
 }
 
