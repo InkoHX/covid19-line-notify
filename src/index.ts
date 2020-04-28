@@ -47,7 +47,8 @@ async function run (): Promise<Response> {
     `退院者数: ${total.discharge}人`,
     `死者数: ${total.death}人`,
     '',
-    'データソース: https://github.com/swsoyee/2019-ncov-japan'
+    'データソース: https://github.com/swsoyee/2019-ncov-japan',
+    'リポジトリ: https://github.com/InkoHX/covid19-line-notify'
   ].join('\n'))
 }
 
