@@ -14,5 +14,5 @@
 ## Setup
 
 1. Fork this repo.
-1. Create a token on [LINE Notify - My Page](https://notify-bot.line.me/my/) and set it as an environment variable.
+1. Create a token on [LINE Notify - My Page](https://notify-bot.line.me/my/) and set it to the environment variable.
 1. Copy the ID of the prefecture from [this page](https://covid19-japan-web-api.now.sh/api/v1/prefectures) and set it to the environment variable.
